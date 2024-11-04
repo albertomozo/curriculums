@@ -1,6 +1,6 @@
 # 📜 Web Curriculum - Evolución Profesional 
 
-![Web Curriculum](./_docs/webcurriculum.gif)
+![Web Curriculum](./_docs/web-curriculum.gif)
 
 > Una página web para mostrar la evolución de mis currículums a través de los años, con un diseño interactivo y visualmente atractivo.
 
