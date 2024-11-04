@@ -3,67 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum Vitae - WhatsApp Style</title>
-    <link rel="stylesheet" href="assets/css/estilos.css">
-    <script src="https://kit.fontawesome.com/e25f45c29f.js" crossorigin="anonymous"></script>
-
-
+    <title>Evolución de mi Currículum</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="titulo">
-                <h1>CurrículumVitae</h1>
+    <header>
+        <h1>Evolución de Curriculumns</h1>
+        <div class="underline"></div>
+        
+           <!-- Carrusel horizontal -->
+    <section class="carousel">
+        <div class="carousel-track">
+           <!--  <button class="carousel-control prev" onclick="scrollCarousel(-1)">←</button> -->
+            <div class="carousel-item" data-id="detalle0" onmouseover="highlight('0')" onmouseout="lowlight('0')">
+                <img src="imagenes/carrusel/foto0.svg" alt="JSON">
+                <p>2024 -</p>
+                <p>JSON</p>
             </div>
-            <div class="logo">
-                <i class="fa-solid fa-bars"></i>
+            <div class="carousel-item" data-id="detalle1" onmouseover="highlight('1')" onmouseout="lowlight('1')">
+                <img src="imagenes/carrusel/foto1.svg" alt="UI Personalizado">
+                <p>2024-</p>
+                <p>UI personalizado</p>
             </div>
-      
-        </header>
-        <div class="contact" onclick="toggleChat('personalChat')">
-            <div class="contact-icon"><i class="fa-solid fa-user"></i></div>
-         
-            <div>Datos Personales </div>
-        </div>
-        <div class="chat" id="personalChat">
-         </div>
-
-        <div class="contact" onclick="toggleChat('experienceChat')">
-            <div class="contact-icon"><i class="fa-solid fa-briefcase"></i></div>
-            
-            <div>Experiencia</div>
-        </div>
-        <div class="chat" id="experienceChat">
-            
-        </div>
-
-        <div class="contact" onclick="toggleChat('educationChat')">
-            <div class="contact-icon"><i class="fa-solid fa-book"></i></div>
-            <div>Formación</div>
-        </div>
-        <div class="chat" id="educationChat">
+            <div class="carousel-item" data-id="detalle2" onmouseover="highlight('2')" onmouseout="lowlight('2')">
+                <img src="imagenes/carrusel/foto2.svg" alt="Portal talento">
+                <p>2023-</p>
+                <p>Portal talento</p>
+            </div>
+            <div class="carousel-item" data-id="detalle3" onmouseover="highlight('3')" onmouseout="lowlight('3')">
+                <img src="imagenes/carrusel/foto3.svg" alt="Github">
+                <p>2020-</p>
+                <p>Github</p>
+            </div>
+            <div class="carousel-item" data-id="detalle4" onmouseover="highlight('4')" onmouseout="lowlight('4')">
+                <img src="imagenes/carrusel/foto4.svg" alt="Linkedin">
+                <p>2015-</p>
+                <p>Linkedin</p>
+            </div>
+            <div class="carousel-item" data-id="detalle5" onmouseover="highlight('5')"  onmouseout="lowlight('5')" ">
+                <img src="imagenes/carrusel/foto5.svg" alt="Lanbide">
+                <p>2010-</p>
+                <p>Servicios publicos empleo</p>
+            </div>
+            <div class="carousel-item" data-id="detalle6" onmouseover="highlight('6')" onmouseout="lowlight('6')">
+                <img src="imagenes/carrusel/foto6.svg" alt="Portales de empleo">
+                <p>2000 - </p>
+                <p>Portales empleo</p>
+            </div>
+            <div class="carousel-item" data-id="detalle7" onmouseover="highlight('7')" onmouseout="lowlight('7')">
+                <img src="imagenes/carrusel/foto7.svg" alt="pdf">
+                <p>2000 -</p>
+                <p>Correo Electrónico</p>
+            </div>
+            <div class="carousel-item" data-id="detalle8" onmouseover="highlight('8')" onmouseout="lowlight('8')">
+                <img src="imagenes/carrusel/foto8.svg" alt="Correo Postal">
+                <p>Siglo XX</p>
+                <p>Correo Postal</p>
+            </div>
+            <!-- Agrega más elementos según necesites -->
            
+            <!-- <button class="carousel-control next" onclick="scrollCarousel(1)">→</button> -->
+            
         </div>
-        <div class="contact" onclick="toggleChat('skillsChat')">
-            <div class="contact-icon"><i class="fa-solid fa-gear"></i></i></div>
-            <div>Habilidades</div>
-        </div>
-        <div class="chat" id="skillsChat">
-           
-        </div>
-        <footer>
-            <p>&copy; Alberto Mozo 2024 <img src="assets/img/alberto.png"/></p>
-        </footer>
-    </div>
+    </section>
+    </header>
+
+    <main class="container">
+        <!-- Columna Izquierda: Lista de currículums -->
+        <section class="curriculum-list">
+            <h2>Vistas Previa</h2>
+            <div class="vistasprevias" id="vp0">
+                <img src="imagenes/lateral/vp0.PNG"  width="100%">
+            </div>
+            <div class="vistasprevias" id="vp1" style="display: none;">
+               <img src="imagenes/lateral/vp1.PNG" width="100%">
+            </div>
+            <div class="vistasprevias" id="vp2" style="display: none;">
+                <img src="imagenes/lateral/vp2.PNG" width="100%">
+            </div>
+            <div class="vistasprevias" id="vp3" style="display: none;">
+                <img src="imagenes/lateral/vp3.PNG" width="100%">
+            </div>
+            <div class="vistasprevias" id="vp4" style="display: none;">
+                <img src="imagenes/lateral/vp4.PNG" width="100%">
+            </div>
+            <div class="vistasprevias" id="vp5" style="display: none;">
+                <img src="imagenes/lateral/vp5.PNG" width="100%">
+            </div>
+            <div class="vistasprevias" id="vp6" style="display: none;">
+                <img src="imagenes/lateral/vp6.PNG" width="100%">
+            </div>
+            <div class="vistasprevias" id="vp7" style="display: none;">
+                <img src="imagenes/lateral/vp7.PNG" width="100%">
+            </div>
+            <div class="vistasprevias" id="vp8" style="display: none;">
+                <img src="imagenes/lateral/vp8.PNG" width="100%">
+            </div>
+       
+        </section>
+
+        <!-- Columna Derecha: Detalles del currículum seleccionado -->
+        <section class="curriculum-details">
+            <div id="detalle0" class="detail-content">
+                <h2><img src="imagenes/carrusel/foto0.svg" /> 2024 - JSON </h2>              
+                <p>Partiendo del JSON Manfred las empresas pueden leerlo siguiento las espeficifaciones del schema</p>
+                <code>
+                    {
+                        "$schema": "https://json-schema.org/draft/2019-09/schema",
+                        "$id": "http://github.com/manfred/mac/schema.json",
+                        "type": "object",
+                        "title": "Manfred Awesomic CV",
+                        "description": "An open CV format",
+                        "properties": {
+                            ....
+                        }
+                </code>
+                <P></P>
+                <p>
+                    <a href="https://raw.githubusercontent.com/getmanfred/mac/v0.5/schema/schema.json" target="_blank">Esquema JSON</a>
+                </p>
+                <p>Este fichero sigue un schema, que permite que cualquier aplicacion con accesos al JSON, pueda extraer la información automaticamente.</p>
+                <p>Las empresas pueden buscar palabras claves y los candidatos pueden mostrar la información con el diseño que quiera</p>
+
+            </div>
+            <div id="detalle1" class="detail-content" style="display: none;">
+                <h2><img src="imagenes/carrusel/foto1.svg" /> 2024 - UI personalizado</h2>
+                <p>Partiendo del JSON.</p>
+                <p><a href="https://cvalberto.netlify.app" target="_blank">Ver Currículum en wEB</a></p>
+                <p>Esta es un visualización particular del JSON personal. En este <a href="https://github.com/albertomozo/cv" target="_blank">repositorio</a> tienes el código, para personalizarlo a tu gusto. Lo puedes usar para demostrar que controlas la manipulación de JSON</p>
+            </div>
+            <div id="detalle2" class="detail-content" style="display: none;">
+                <h2><img src="imagenes/carrusel/foto2.svg" /> 2023 - Portal talento</h2>
+                <p>Al descubrir la web de getManfred, y poder  importar los datos de Linkedin, añadir datos propios y exportarlos a JSON, me decidí a usar UI distintas para mostar mi curriculum </p>
+                <p>Además la aplicación nos facilita también sus propias visualizaciones</p>
+                <p><a href="https://mnf.red/albertomozo/timeline" target="_blank">Pérfil Manfred (timeline)</a></p>
+                <p><a href="https://mnf.red/albertomozo/classic" target="_blank">Pérfil Manfred (classic)</a></p>
+            </div>
+            <div id="detalle3" class="detail-content" style="display: none;">
+                <h2><img src="imagenes/carrusel/foto3.svg" /> 2020 - GitHub</h2>
+                <p>Especificamente en el desarrollo informatico, una cuenta en github es imprescindible. </p>
+                <p><a href="https://github.com/albertomozo" target="_blank">Ver Perfil de Github</a></p>
+                <p>Github proporciona un alojamiento en un repositorio con el nombre de usuario, que es la pagina de entrada a tu usuario. Por lo tanto el README.md, actual como tarjeta de visita.</p>
+                <p>En esta plataforma son muy usados los badget para mostrar tus conocimientos</p>
+            </div>
+            <div id="detalle4" class="detail-content" style="display: none;">
+                <h2><img src="imagenes/carrusel/foto4.svg" /> 2015 - Linkedin</h2>
+                <p>Ante la diversidad de plataformas de empleos, decido usar Linkedin como referencia de mi curriculum.</p>
+                <p><a href="https://www.linkedin.com/in/alberto-mozo-avellaned-80615713/" target="_blank">Ver Perfil de linkedin</a></p>
+                <p>La red social de empleo por excelencia, ofrece multitud de opciones para mostrar tus aptitudes. A cada experiencia se le pueden añadir documentos y ofrece test de habilidades.</p>
+                <p>Muchas empresas del mndo tech, educacional, RRHH, ... realizan busquedas activas sobre el contenido de todos los usuarios de esta red.</p>
+                <p>Actualmente es la herramienta que más uso y actualizo.</p>
+            </div>
+            <div id="detalle5" class="detail-content" style="display: none;">
+                <h2><img src="imagenes/carrusel/foto5.svg" /> 2010 - Servicios públicos de empleo</h2>
+                <p>La automatización de los servicios de empleo, permiten tener otro cv.</p>
+                <p><a href="https://ilanbide.lanbide.net/pdf/CV_resumido_empresa_1730624755967.pdf" target="_blank">Ver CV que envia Lanbide a las empresas</a></p>
+                <p>En el caso de Euskadi, este el cv que genera y muestra a las empresas. Los usuarios del sistema pueden añadir experiencias y educaciones, pero si se quieren oficializar se debe aportar documentación paar su confirmación.
+                    </p>
+            </div>
+            <div id="detalle6" class="detail-content" style="display: none;">
+                <h2><img src="imagenes/carrusel/foto6.svg" /> 2005 - Portales de Empleo</h2>
+                <p>La aparición de los portales de empleo (trabajos.com, infojobs.com,...), abre una nueva via de comunicación, permitiendo una comunicción ,más dinamica.  </p>
+                <img src="imagenes/infojobs.png"/>
+                <p>El problema es  que cada aplicación te solicita rellenar el curriculum en su plataforma, y la gestion de actualización se hace muy tediosa.</p>
+                <p>Personalmente siempre incluyo mi perfil de linkedin he intento indicar que es mi "curriculum ofical"<p>
+                <ul>
+                    <li><a href="https://infojobs.net" target="_blank">infojobs</a></li>
+                    <li><a href="https://tecnoempleo.com" target="_blank">tecnoempleo</a></li>
+                    <li><a href="#" target="_blank">.....</a></li>
 
 
-<script>
-     
-</script>
-<script src="assets/js/datos.js"></script>
-<script src="assets/js/funciones.js"></script>
-<script src="assets/js/contacto.js"></script>
-<script src="assets/js/experiencia.js"></script>
-<script src="assets/js/formacion.js"></script>
+                </ul>
+                
+            </div>
+            <div id="detalle7" class="detail-content" style="display: none;">
+                <h2><img src="imagenes/carrusel/foto7.svg" />  2000 - PDF en red</i></h2>
+                <p>Los ficheros PDF, se han convertido en un standard de documento en internet. Por lo tanto hay que tener un documento  pdf en internet actualizado, para enviar a cualquier empleador. </p>
+                               
+                <p><a href="https://github.com/albertomozo/albertomozo/raw/main/assets/cv_AlbertoMozoAvellaned_codigos.pdf" target="_blank">Ver PDF en red</a>
+                </p>
+                <p>Muchas empresas solicitan que les envie tu curriculum en un soporte informatico en pdf.</p>
+                <p>En las busquedas proactivas puedes usar el pdf, como documento adjunto en envios de correos electrónicos</p>
+                <p>En mi correo electrónico incluyo siempre la siguiente firma, en la que incluyo un enlace a mi perfil de linkedin</p>
+                <img src="imagenes/firmaEmail.PNG" width="100%">
+            </div>
+            <div id="detalle8" class="detail-content" style="display: none;">
+                <h2>  <img src="imagenes/carrusel/foto8.svg" /> Siglo XX - Servicio Postal</h2>
+                <p>Había vida antes de internet. Las ofertas de trabajo se anunciban en las páginas salmon de los periodicos, y la comunicación se realizaba mediante correo postal.  </p>
+
+
+                <p><img src="imagenes/ofertas-empleo-768x542.jpg"/ width="50%">
+
+                En lugar de enviar correos electrónicos, se enviaban cartas a las empresas. LAs empresas se buscaban en las páginas amarillas o en listados que te facilitaban agrupaciones de empresas, como las camaras de Comercio</p>
+                
+                <!-- <a href="https://github.com/albertomozo/albertomozo/blob/main/assets/cv_AlbertoMozoAvellaned_codigos.pdf" target="_blank">Ver PDF en red</a -->>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+       /* function showDetails(id) {
+            // Ocultar todos los detalles
+            document.querySelectorAll('.detail-content').forEach(detail => {
+                detail.style.display = 'none';
+            });
+            // Mostrar el detalle seleccionado
+            console.log(`detalle${id}`);
+
+            document.getElementById(`detalle${id}`).style.display = 'block';
+            // Ocultar todas las  vistas previas
+            document.querySelectorAll('.vistasprevias').forEach(vistas => {
+                vistas.style.display = 'none';
+            });
+            // Mostrar el detalle seleccionado
+            document.getElementById(`vp${id}`).style.display = 'block';
+        } */
+
+        function highlight(id) {
+            // Ocultar todos los detalles y eliminar resaltado de la barra lateral
+            document.querySelectorAll('.detail-content').forEach(detail => {
+                detail.style.display = 'none';
+            });
+            document.querySelectorAll('.vistasprevias').forEach(detail => {
+                detail.style.display = 'none';
+            });
+            document.querySelectorAll('.curriculum-list button').forEach(button => {
+                button.classList.remove('active');
+            });
+    
+            // Mostrar el detalle correspondiente
+            document.getElementById(`detalle${id}`).style.display = 'block';
+            // Mostrar el detalle correspondiente
+            document.getElementById(`vp${id}`).style.display = 'block';
+            
+            // Resaltar la entrada de la barra lateral correspondiente
+            //document.querySelector(`.curriculum-list button[data-id="detalle${id}"]`).classList.add('listActive');
+            const button = document.querySelector(`[data-id="detalle${id}"]`);
+            if (button) {
+                button.classList.add('listActive');
+            } else {
+                console.warn(`Elemento con data-id="detalle${id}" no encontrado`);
+            }
+            // activar destacado
+
+            //carouselItem.style.transform = 'scale(1.1)';
+            //carouselItem.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+        }
+
+        function lowlight(id) {
+            //carouselItem.style.transform = 'scale(1)';
+            //carouselItem.style.boxShadow = 'none';
+            // Resaltar la entrada de la barra lateral correspondiente
+            document.querySelector(`[data-id="detalle${id}"]`).classList.remove('listActive');
+        }
+
+        let currentIndex = 0;
+
+        function scrollCarousel(direction) {
+            const track = document.querySelector('.carousel-track');
+            const items = document.querySelectorAll('.carousel-item');
+            const itemWidth = items[0].offsetWidth + 20; // 20px gap
+
+            // Ajustar el índice y limitarlo a los límites del carrusel
+            currentIndex += direction;
+            currentIndex = Math.max(0, Math.min(items.length - 3, currentIndex)); // Ajusta según el número visible de items
+
+            // Mover el carrusel
+            track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        }
+    </script>
 </body>
 </html>
