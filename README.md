@@ -15,7 +15,7 @@ Este proyecto está construido utilizando:
 ## 🚀 Funcionalidades
 
 ✨ **Carrusel Interactivo**: Un carrusel horizontal que muestra versiones anteriores de mi currículum. Al pasar el ratón, se resaltan detalles de cada versión.  
-📜 **Barra Lateral de Navegación**: Una barra lateral con una breve descripción de cada currículum. Al hacer clic o pasar el ratón sobre cada entrada, se sincroniza con el carrusel y muestra información detallada a la derecha.  
+🖼️ **Imagen  Lateral**: Una Imagen que  se sincroniza con el carrusel.  
 🔍 **Contenido Detallado**: Al seleccionar un currículum, el área de contenido muestra los detalles específicos de la versión elegida.
 
 ## 📂 Estructura del Proyecto
