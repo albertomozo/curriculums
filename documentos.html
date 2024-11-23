@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolución de mi Currículum</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/imagenes/alberto.ico">
+    <style>
+    .container {
+          /*   display: flex;
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px; */
+        }
+
+        .timeline {
+            flex: 1;
+            border-right: 2px solid #ddd;
+            padding-right: 20px;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: #ccc;
+        }
+
+        .timeline ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .timeline li {
+            position: relative;
+            margin: 20px 0;
+            padding-left: 50px;
+        }
+
+        .timeline li::before {
+            content: "";
+            position: absolute;
+            left: 12px;
+            top: 10px;
+            width: 12px;
+            height: 12px;
+            background-color: #007bff;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .timeline li .year {
+            font-weight: bold;
+            color: #007bff;
+            font-size: 1.2em;
+        }
+
+        .timeline li .details {
+            color: #555;
+        }
+
+        .timeline li:hover {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .display {
+            flex: 2;
+            text-align: center;
+        }
+
+        .display img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+   /*      .underline {
+            width: 80%;
+            margin: 10px auto;
+            border-bottom: 2px solid #ddd;
+        } */
+
+       /*  .header-titulo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-logo img {
+            width: 50px;
+            height: 50px;
+        } */
+
+    /*     .header-h1 h1 {
+            margin: 0;
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-titulo">
+            <div class="header-logo">
+                <img src="imagenes/alberto.png">
+            </div>
+            <div  class="header-h1">
+                <h1>Evolución de Curriculumns</h1>
+            </div>
+            <div class="header-menu">
+                <a href="index.html" title="Evolución curriculos">
+                    <img src="imagenes/curriculum-resume-svgrepo-com.svg">
+                </a>
+            </div>
+        </div>
+        <div class="underline"></div>
+        <!-- <h2>Lista de documentos</h2> -->
+           <!-- Carrusel horizontal -->
+        
+    </header>
+
+    <main class="container">
+        <div class="timeline">
+            <ul id="document-list"></ul>
+        </div>
+        <div class="display">
+            <img id="document-image" src="imagenes/documentos/1988_UPV-EHU_Certificado.jpeg" alt="Selecciona un documento">
+        </div>
+    </main>
+
+    <script>
+      const   documentos = ['1988_UPV-EHU_Certificado.jpeg','1992_Cebanc_AS400.jpeg','1993_Nazaret_Certificado.jpeg','2001_Zubeldia_Administrador-Servidores-Internet.jpeg','2008_Item-Formación_virtualtutor.jpeg','2015_Webtrekk_Analitica-Digital.jpeg','2016_UNED_Competencias-Tic.jpeg','2020_Cebanc_CP-Docente-Empleo.jpg'];
+      const documentList = document.getElementById('document-list');
+        const documentImage = document.getElementById('document-image');
+
+        documentos.forEach(doc => {
+            // Descomponer el nombre del archivo
+            let [year, entity, title] = doc.split('_');
+            console.log (year + ' ' + entity + ' ' + title);
+            entity.replace('-', ' ');
+            title.replace('-', ' ');
+            const listItem = document.createElement('li');
+            listItem.textContent = `${year} - ${entity}: ${title.split('.')[0]}`;
+            listItem.addEventListener('mouseover', () => {
+                documentImage.src = `imagenes/documentos/${doc}`;
+                documentImage.alt = `${title}`;
+            });
+            documentList.appendChild(listItem);
+        });
+
+       
+    </script>
+</body>
+</html>

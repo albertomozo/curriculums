@@ -22,8 +22,15 @@ Este proyecto está construido utilizando:
 
 ```plaintext
 .
-├── index.html         # Página principal con la estructura HTML
+├── index.html         # Página principal con la estructura HTML y la historia de los 
+├── documentos.html    # Página con la ista de documentos y certificaciones HTML
 ├── styles.css         # Estilos CSS
 ├── script.js          # Funciones en JavaScript para la interactividad
 └── _docs/
     └── webcurriculum.gif  # Gif animado de demostración
+
+## deploy
+
+https://cv-ejemplos.netlify.app
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c24c80ae-41b7-4b22-83f3-e1d729eae571/deploy-status)](https://app.netlify.com/sites/cv-ejemplos/deploys)

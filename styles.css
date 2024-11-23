@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto;
+    font-size : 16px;
     background-color: #f4f4f9;
     color: #333;
     display: flex;
@@ -32,6 +33,34 @@ h1 {
     max-width: 1000px;
     width: 100%;
 }
+
+header {
+    width: 1060px;
+}
+.header-titulo{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+.header-logo {
+    width: 80px;
+    img {
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+.header-menu {
+    width: 80px;
+    img {
+        width: 100%;
+    }
+    :hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    } 
+}
+
 
 .curriculum-list {
   
@@ -82,7 +111,7 @@ h1 {
 }
 
 .detail-content p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     margin-bottom: 10px;
     color: #555;
 }
@@ -95,6 +124,10 @@ h1 {
 
 .detail-content a:hover {
     text-decoration: underline;
+}
+
+.vistasprevias {
+    width : 300px;
 }
 
 

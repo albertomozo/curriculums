@@ -5,67 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evolución de mi Currículum</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/imagenes/alberto.ico">
 </head>
 <body>
     <header>
-        <h1>Evolución de Curriculumns</h1>
+        <div class="header-titulo">
+            <div class="header-logo">
+                <img src="imagenes/alberto.png">
+            </div>
+            <div  class="header-h1">
+                <h1>Evolución de Curriculumns</h1>
+            </div>
+            <div class="header-menu">
+                <a href="documentos.html" title="Titulos, certificaciones">
+                    <img src="imagenes/documents-sharp-svgrepo-com.svg">
+                </a>
+            </div>
+        </div>
         <div class="underline"></div>
         
            <!-- Carrusel horizontal -->
-    <section class="carousel">
-        <div class="carousel-track">
-           <!--  <button class="carousel-control prev" onclick="scrollCarousel(-1)">←</button> -->
-            <div class="carousel-item" data-id="detalle0" onmouseover="highlight('0')" onmouseout="lowlight('0')">
-                <img src="imagenes/carrusel/foto0.svg" alt="JSON">
-                <p>2024 -</p>
-                <p>JSON</p>
-            </div>
-            <div class="carousel-item" data-id="detalle1" onmouseover="highlight('1')" onmouseout="lowlight('1')">
-                <img src="imagenes/carrusel/foto1.svg" alt="UI Personalizado">
-                <p>2024-</p>
-                <p>UI personalizado</p>
-            </div>
-            <div class="carousel-item" data-id="detalle2" onmouseover="highlight('2')" onmouseout="lowlight('2')">
-                <img src="imagenes/carrusel/foto2.svg" alt="Portal talento">
-                <p>2023-</p>
-                <p>Portal talento</p>
-            </div>
-            <div class="carousel-item" data-id="detalle3" onmouseover="highlight('3')" onmouseout="lowlight('3')">
-                <img src="imagenes/carrusel/foto3.svg" alt="Github">
-                <p>2020-</p>
-                <p>Github</p>
-            </div>
-            <div class="carousel-item" data-id="detalle4" onmouseover="highlight('4')" onmouseout="lowlight('4')">
-                <img src="imagenes/carrusel/foto4.svg" alt="Linkedin">
-                <p>2015-</p>
-                <p>Linkedin</p>
-            </div>
-            <div class="carousel-item" data-id="detalle5" onmouseover="highlight('5')"  onmouseout="lowlight('5')" ">
-                <img src="imagenes/carrusel/foto5.svg" alt="Lanbide">
-                <p>2010-</p>
-                <p>Servicios publicos empleo</p>
-            </div>
-            <div class="carousel-item" data-id="detalle6" onmouseover="highlight('6')" onmouseout="lowlight('6')">
-                <img src="imagenes/carrusel/foto6.svg" alt="Portales de empleo">
-                <p>2000 - </p>
-                <p>Portales empleo</p>
-            </div>
-            <div class="carousel-item" data-id="detalle7" onmouseover="highlight('7')" onmouseout="lowlight('7')">
-                <img src="imagenes/carrusel/foto7.svg" alt="pdf">
-                <p>2000 -</p>
-                <p>Correo Electrónico</p>
-            </div>
-            <div class="carousel-item" data-id="detalle8" onmouseover="highlight('8')" onmouseout="lowlight('8')">
-                <img src="imagenes/carrusel/foto8.svg" alt="Correo Postal">
-                <p>Siglo XX</p>
-                <p>Correo Postal</p>
-            </div>
-            <!-- Agrega más elementos según necesites -->
-           
-            <!-- <button class="carousel-control next" onclick="scrollCarousel(1)">→</button> -->
+        <section class="carousel">
+            <div class="carousel-track">
+            <!--  <button class="carousel-control prev" onclick="scrollCarousel(-1)">←</button> -->
+                <div class="carousel-item" data-id="detalle0" onmouseover="highlight('0')" onmouseout="lowlight('0')">
+                    <img src="imagenes/carrusel/foto0.svg" alt="JSON">
+                    <p>2024 -</p>
+                    <p>JSON</p>
+                </div>
+                <div class="carousel-item" data-id="detalle1" onmouseover="highlight('1')" onmouseout="lowlight('1')">
+                    <img src="imagenes/carrusel/foto1.svg" alt="UI Personalizado">
+                    <p>2024-</p>
+                    <p>UI personalizado</p>
+                </div>
+                <div class="carousel-item" data-id="detalle2" onmouseover="highlight('2')" onmouseout="lowlight('2')">
+                    <img src="imagenes/carrusel/foto2.svg" alt="Portal talento">
+                    <p>2023-</p>
+                    <p>Portal talento</p>
+                </div>
+                <div class="carousel-item" data-id="detalle3" onmouseover="highlight('3')" onmouseout="lowlight('3')">
+                    <img src="imagenes/carrusel/foto3.svg" alt="Github">
+                    <p>2020-</p>
+                    <p>Github</p>
+                </div>
+                <div class="carousel-item" data-id="detalle4" onmouseover="highlight('4')" onmouseout="lowlight('4')">
+                    <img src="imagenes/carrusel/foto4.svg" alt="Linkedin">
+                    <p>2015-</p>
+                    <p>Linkedin</p>
+                </div>
+                <div class="carousel-item" data-id="detalle5" onmouseover="highlight('5')"  onmouseout="lowlight('5')" ">
+                    <img src="imagenes/carrusel/foto5.svg" alt="Lanbide">
+                    <p>2010-</p>
+                    <p>Servicios publicos empleo</p>
+                </div>
+                <div class="carousel-item" data-id="detalle6" onmouseover="highlight('6')" onmouseout="lowlight('6')">
+                    <img src="imagenes/carrusel/foto6.svg" alt="Portales de empleo">
+                    <p>2000 - </p>
+                    <p>Portales empleo</p>
+                </div>
+                <div class="carousel-item" data-id="detalle7" onmouseover="highlight('7')" onmouseout="lowlight('7')">
+                    <img src="imagenes/carrusel/foto7.svg" alt="pdf">
+                    <p>2000 -</p>
+                    <p>Correo Electrónico (PDF)</p>
+                </div>
+                <div class="carousel-item" data-id="detalle8" onmouseover="highlight('8')" onmouseout="lowlight('8')">
+                    <img src="imagenes/carrusel/foto8.svg" alt="Correo Postal">
+                    <p>Siglo XX</p>
+                    <p>Correo Postal</p>
+                </div>
+                <!-- Agrega más elementos según necesites -->
             
-        </div>
-    </section>
+                <!-- <button class="carousel-control next" onclick="scrollCarousel(1)">→</button> -->
+                
+            </div>
+        </section>
     </header>
 
     <main class="container">
@@ -97,7 +110,7 @@
                 <img src="imagenes/lateral/vp7.PNG" width="100%">
             </div>
             <div class="vistasprevias" id="vp8" style="display: none;">
-                <img src="imagenes/lateral/vp8.PNG" width="100%">
+                <img src="imagenes/lateral/vp8.jpg" width="100%">
             </div>
        
         </section>
@@ -123,13 +136,18 @@
                     <a href="https://raw.githubusercontent.com/getmanfred/mac/v0.5/schema/schema.json" target="_blank">Esquema JSON</a>
                 </p>
                 <p>Este fichero sigue un schema, que permite que cualquier aplicacion con accesos al JSON, pueda extraer la información automaticamente.</p>
+                <p>
+                    <a href="assets/my-mac-from-manfred_albertoMozo.json" target="_blank">Mi CV en JSON</a>
+                </p>
+                
                 <p>Las empresas pueden buscar palabras claves y los candidatos pueden mostrar la información con el diseño que quiera</p>
 
             </div>
             <div id="detalle1" class="detail-content" style="display: none;">
                 <h2><img src="imagenes/carrusel/foto1.svg" /> 2024 - UI personalizado</h2>
-                <p>Partiendo del JSON.</p>
-                <p><a href="https://cvalberto.netlify.app" target="_blank">Ver Currículum en wEB</a></p>
+                <p>Partiendo del JSON en el que recopilo mi información, se me ocuurio, simular la aplicacion de whatsApp con su contenido. Me parecio un ejercicio interesante para los cursos de Desarrollo Web</p>
+                <p>El resultado es la pagina web que enlazo a continuación</p>
+                <p><a href="https://cvalberto.netlify.app" target="_blank">Ver Currículum en Web</a></p>
                 <p>Esta es un visualización particular del JSON personal. En este <a href="https://github.com/albertomozo/cv" target="_blank">repositorio</a> tienes el código, para personalizarlo a tu gusto. Lo puedes usar para demostrar que controlas la manipulación de JSON</p>
             </div>
             <div id="detalle2" class="detail-content" style="display: none;">
@@ -178,7 +196,7 @@
                 
             </div>
             <div id="detalle7" class="detail-content" style="display: none;">
-                <h2><img src="imagenes/carrusel/foto7.svg" />  2000 - PDF en red</i></h2>
+                <h2><img src="imagenes/carrusel/foto7.svg" />  2000 - Correo Electrónico (PDF)</h2>
                 <p>Los ficheros PDF, se han convertido en un standard de documento en internet. Por lo tanto hay que tener un documento  pdf en internet actualizado, para enviar a cualquier empleador. </p>
                                
                 <p><a href="https://github.com/albertomozo/albertomozo/raw/main/assets/cv_AlbertoMozoAvellaned_codigos.pdf" target="_blank">Ver PDF en red</a>
@@ -190,12 +208,15 @@
             </div>
             <div id="detalle8" class="detail-content" style="display: none;">
                 <h2>  <img src="imagenes/carrusel/foto8.svg" /> Siglo XX - Servicio Postal</h2>
-                <p>Había vida antes de internet. Las ofertas de trabajo se anunciban en las páginas salmon de los periodicos, y la comunicación se realizaba mediante correo postal.  </p>
+                <p><img src="imagenes/OfertaComercial-1_picnik.jpg" style="float:left; margin-right: 15px;" width="40%"> Había vida antes de internet. Las ofertas de trabajo se anunciaban en las páginas de empleo de las ediciones dominicales de los periodicos, y la comunicación se realizaba mediante correo postal.  <br><br>
 
+                En lugar de enviar correos electrónicos, se enviaban cartas a las empresas. Las empresas se buscaban en las páginas amarillas o en listados que te facilitaban agrupaciones de empresas, como las camaras de Comercio. <br><br>
+                    
+                Al encontrar una carpeta de cartón con los sobres, sellos, fotos y fotocopias de titulo y certificados, pense en  crear esta pequeña web
+                  
+                </p>
 
-                <p><img src="imagenes/ofertas-empleo-768x542.jpg" style="float:left; margin-right: 15px;" width="50%">
-
-                En lugar de enviar correos electrónicos, se enviaban cartas a las empresas. Las empresas se buscaban en las páginas amarillas o en listados que te facilitaban agrupaciones de empresas, como las camaras de Comercio</p>
+                
                 
                 <!-- <a href="https://github.com/albertomozo/albertomozo/blob/main/assets/cv_AlbertoMozoAvellaned_codigos.pdf" target="_blank">Ver PDF en red</a> -->
             </div>
